@@ -1,0 +1,44 @@
+Installation und Hinzufügen weiterer Inhaltsdaten
+-------------------------------------------------
+
+Zur Installation der Anwendung sind folgende Schritte durchzuführen:
+
+	1. Der Inhalt des Verzeichnisses "MuTH" muss auf einen geeigneten Webspace hochgeladen werden, auf dem die PHP Version 7.2 läuft.
+
+	2. Der Inhalt der Datei "muth.sql" muss in eine MySQL-Datenbank mit der Version MySQL 5.7.21 importiert werden.
+ 	   Dort ist das Format "SQL" und die Kodierung "utf-8" auszuwählen.
+
+	3. In der Datei /lib/db.inc.php müssen die Verbindungsdaten zur Datenbank eingetragen werden (Host, Username, Passwort und Datenbankname).
+
+
+Einfügen weiterer Touren:
+
+	1. Ein neuer Eintrag in der Tabelle "tour" ist zu erstellen.
+
+	2. Diese ist über neue Einträge in der Tabelle "tour_schlagwort" mit einem oder mehreren Schlagwörtern zu verknüpfen.
+  	   Über die Tabelle "schlagwort" können weitere Schlagworte dafür hinzugefügt werden.
+
+	3. Über die Tabelle "tour_station" können der Tour Stationen hinzugefügt werden.
+   	   Dafür sind Ordnungsnummern von 1 aufsteigend zu wählen. Diese müssen direkt aufeinander folgen.
+
+
+Einfügen weiterer Stationen:
+
+	1. Ein neuer Eintrag in der Tabelle "station" ist zu erstellen.
+
+	2. Je nach Stationstyp muss ein weiterer neuer Eintrag in einer der Tabellen "station_mehrfachantwort", "station_schaetzen" oder "station_wahr_falsch" erstellt werden.
+
+	3. Für den Stationstyp Mehrfachantwort muss die Station über die Tabelle "station_mehrfachantwort_antwortmoeglichkeit" mit Antwortmöglichkeiten verknüpft werden.
+     	   Über die Tabelle "antwortmoeglichkeit" können weitere Antwortmöglichkeiten dafür hinzugefügt werden.
+
+	4. Optional kann zu der Station in der Tabelle "erklaerung" eine Erklärung angelegt werden.
+
+
+Einfügen weiterer statischer Seiten:
+
+	1. Ein neuer Eintrag in der Tabelle "station" ist zu erstellen. Dessen Inhalt und Menütitel wird automatisch in die Anwendung ausgelesen.
+
+
+Live-Ansicht der Anwendung
+--------------------------
+Eine Live-Ansicht der Anwendung kann auch unter der beigefügten Verknüpfung eingesehen, deren konstante Verfügbarkeit aber nicht gewährt werden.
