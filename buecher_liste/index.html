@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Bücherliste</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+  </head>
+  <div id="header-bg"></div>
+  <body>
+    <header>
+      <h1><i class="fas fa-book"></i> Bücherliste</h1>
+    </header>
+    <main>
+      <section class="book-display">
+        <h2>Bücher</h2>
+        <div class="options">Sortieren nach 
+          <select id="sort-dropdown">
+            <option value="title" selected>Titel</option>
+            <option value="author">Autor*in</option>
+            <option value="startDate">Lesebeginn</option>
+            <option value="endDate">Leseende</option>
+            <option value="pageCount">Seitenzahl</option>
+          </select>
+        </div>
+        <ul>
+
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section id="add-book">
+        <h2>Neues Buch hinzufügen</h2>
+        <form id="add-book-form">
+          <div>
+            <input id="title" type="text" placeholder="Buchtitel*" required>
+          </div>
+          <div>
+            <input id="author" type="text" placeholder="Autor*in*" required>
+          </div>
+          <div>
+            <input id="cover-url" type="text" placeholder="URL zum Cover">
+          </div>
+          <div>
+            <input id="start-date" type="text" placeholder="Lesebeginn" onfocus="(this.type='date')">
+          </div>
+          <div>
+            <input id="end-date" type="text" placeholder="Leseende" onfocus="(this.type='date')">
+          </div>
+          <div>
+            <input id="page-count" type="number" placeholder="Seitenzahl*" required>
+          </div>
+          <div>
+            <button>Buch hinzufügen</button>
+          </div>
+        </form>
+      </section>
+      <section id="stats">
+        <h2>Statistiken</h2>
+        <div id="stats-content">
+          <div id="stats-nums">
+            <span class="stats-num" id="stats-books-read"></span>
+            <span class="stats-num" id="stats-days-per-book"></span>
+            <span class="stats-num" id="stats-pages-per-day"></span>
+            <span class="stats-num" id="stats-currently-reading"></span>
+            <span class="stats-num" id="stats-tbr"></span>
+          </div>
+          <div id="stats-labels">
+            <span class="stats-label">gelesene Bücher</span>
+            <span class="stats-label">Tage durchschnittlich pro Buch</span>
+            <span class="stats-label">Seiten durchschnittlich am Tag</span>
+            <span class="stats-label">Bücher am Lesen</span>
+            <span class="stats-label">ungelesene Bücher</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

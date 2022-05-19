@@ -1,0 +1,287 @@
+html {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2px;
+  background-color: #f4f4f8;
+  color: #000000;
+}
+  
+body {
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header, footer {
+  padding: 20px 20px 20px;
+  background-color: #e6e6ea;
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#add-book, #stats {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 400px;
+}
+
+#header-bg {
+  background-color: #e6e6ea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 87px;
+  z-index: -1;
+}
+
+/* General input style */
+
+button, select, *:not(.star-cb-group) input {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f4f4f8;
+}
+
+*:not(.star-cb-group) input {
+  width: 100%;
+  display: block;
+  letter-spacing: 0.2px;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  border: none;
+  background-color: #3F51B5;
+  color: #f4f4f8;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul button {
+  width: auto;
+  margin: auto 5px 5px;
+  font-size: 14px;
+  background-color: #d5d5dc;
+  color: black;
+  text-transform: uppercase;
+  height: 41px;
+  min-width: 41px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Input forms */
+
+form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#add-book, .book-display, #edit-book, .in-list-form {
+  padding: 10px 20px 20px;
+}
+
+#add-book, #edit-book, .in-list-form {
+  background-color: #e6e6ea;
+}
+
+.in-list-form form div {
+  display: block;
+  margin-right: auto;
+  min-height: 0px;
+}
+
+/* Headlines */
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+h1 i {
+  color: #3F51B5;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.35em;
+}
+
+/* Book list */
+
+.book-display {
+  padding: 0 20px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-left: 15px;
+  min-height: 150px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.book-display ul li {
+  max-width: 680px;
+}
+
+@media (max-width: 680px) {
+  .book-display ul li div:first-child {
+    display: none !important;
+  }
+}
+
+.pagecount {
+  color: #777;
+}
+
+/* Sort by dropdown */
+
+.options {
+  text-align: right;
+  position: relative;
+  top: -70px;
+  height: 0px;
+}
+
+.options select {
+  background-color: #e6e6ea;
+}
+
+@media (max-width: 400px) {
+  .options {
+    text-align: left;
+    top: -30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Cover */
+
+.img-container {
+  position: relative;
+  height: 160px;
+}
+
+img {
+  width: 100px;
+}
+
+/* Marker on cover image */
+
+.marker-status {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 18px;
+  background-color: rgba(63, 81, 181, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 3.5px;
+}
+
+/* Stats */
+
+#stats {
+  padding: 10px 20px 20px;
+}
+
+#stats-content {
+  text-align: left;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#stats-content * {
+  box-sizing: border-box;
+}
+
+#stats-nums, #stats-labels {
+  display: inline-block;
+}
+
+#stats-nums {
+  min-width: 50px;
+  margin-right: 10px;
+}
+
+#stats-labels {
+  width: 285px;
+}
+
+.stats-num, .stats-label {
+  display: block;
+  padding: 4px;
+  text-align: left;
+}
+
+.stats-num {
+  color: #3F51B5;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.stats-label {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+@media only screen and (max-width: 438px) {
+  #stats-labels {
+    width: 220px;
+  }
+
+  .stats-num {
+    font-size: 24px;
+  }
+  
+  .stats-label {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
