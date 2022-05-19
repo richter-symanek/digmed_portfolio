@@ -1,0 +1,1 @@
+<span class="uebersicht_punkte">$punkte <i class="fas fa-trophy"></i></span>

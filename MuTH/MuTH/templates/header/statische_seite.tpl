@@ -1,0 +1,1 @@
+<a href="seite.php?page=$seite_bezeichner">$seite_menuetitel</a>
