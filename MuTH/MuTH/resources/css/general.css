@@ -1,0 +1,389 @@
+body {
+	margin: 0;
+	background-color: #f9f9f9;
+	font-family: Roboto, sans-serif;
+	font-size: 1rem;
+	word-wrap: break-word;
+	height: 100%;
+	padding: 0;
+}
+
+.content {
+	width: 98%;
+	margin: 0.5rem auto 1rem;
+	position: relative;
+}
+
+.content img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 1.9rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	line-height: 2.5rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 1rem;
+	line-height: 1.1rem;
+	font-weight: 500;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+a {
+    color: #f25549;
+	text-decoration: none;
+}
+
+.button, input[type="button"], input[type="submit"] {
+    background-color: #ff7e69;
+	color: #f9f9f9;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	-moz-border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	box-shadow: none;
+	border: none;
+	font-weight: 500;
+	margin: 1rem auto;
+	-webkit-appearance: none;
+}
+
+@media screen and (min-width: 600px) {
+	p > .button ~ .button, p > .button ~ input[type="button"], p > .button ~ input[type="submit"],
+	p > input[type="button"] ~ .button, p > input[type="button"] ~ input[type="button"], p > input[type="button"] ~ input[type="submit"],
+	p > input[type="submit"] ~ .button, p > input[type="submit"] ~ input[type="button"], p > input[type="submit"] ~ input[type="submit"] {
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	p > .button ~ .button, p > .button ~ input[type="button"], p > .button ~ input[type="submit"],
+	p > input[type="button"] ~ .button, p > input[type="button"] ~ input[type="button"], p > input[type="button"] ~ input[type="submit"],
+	p > input[type="submit"] ~ .button, p > input[type="submit"] ~ input[type="button"], p > input[type="submit"] ~ input[type="submit"] {
+		margin-top: 1rem;
+	}
+}
+
+.button:active, input[type="button"]:active, input[type="submit"]:active {
+	outline: none;
+	background-color: #f25549;
+}
+
+input[type="text"], input[type="number"], select {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	-moz-border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	border-radius: 1rem;
+	font-family: Roboto, sans-serif;
+	box-shadow: none;
+	border: 1px solid #dddddd;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+	outline: none;
+	border-color: #009fe3;
+}
+
+@media screen and (max-width: 600px) {
+	.content {
+		width: 92%;
+		margin: 0.5rem auto 1rem;
+	}
+}
+
+.back {
+	width: 100%;
+	background-color: #eaeaea;
+}
+
+.back > * > * {
+	padding: 1rem;
+}
+
+.index_img {
+	background-image: url("../images/schiff.svg");
+	background-position: right bottom;
+    background-repeat: no-repeat;
+	background-size: 65%;
+}
+
+@media screen and (max-width: 600px) {
+	.index_img {
+		height: 80vh;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.index_img.content {
+		min-height: 80vh;
+		background-size: 65vh;
+	}
+}
+
+.uebersicht_optionen {
+	width: 100%;
+}
+
+.uebersicht_optionen a {
+	display: block;
+	float: left;
+	box-sizing: border-box;
+	padding: 1rem 0.5rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.uebersicht_optionen a {
+		width: 50%;
+	}
+}
+
+.uebersicht_table {
+	width: 100%;
+	border: 0;
+	border-spacing: 0 0.0625rem;
+}
+
+.uebersicht_table tr th {
+	background-color: #f25549;
+	color: #f9f9f9;
+	font-weight: 500;
+}
+
+.uebersicht_table tr td, .uebersicht_table tr th {
+	text-align: left;
+}
+
+.uebersicht_table tr td + td, .uebersicht_table tr th + th {
+	text-align: right;
+}
+
+.uebersicht_table tr th {
+	padding: 1rem 1rem;
+}
+
+.uebersicht_table tr td {
+	padding: 1rem 0.5rem;
+}
+
+.uebersicht_table tr td i {
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+
+.uebersicht_table tr.farbe1 {
+	background-color: #f2f2f7;
+}
+
+.uebersicht_table tr.farbe2 {
+	background-color: #ededf2;
+}
+
+@media screen and (max-width: 600px) {
+	.willkommen_form {
+		line-height: 150%;
+		text-align: center;
+	}
+}
+
+.green-icon {
+	color: #81d159;
+}
+
+.uebersicht_hinweis {
+	color: #009fe3;
+	width: 98%;
+	box-sizing: border-box;
+	margin: 0.5rem auto 1rem;
+}
+
+@media screen and (max-width: 600px) {
+	.uebersicht_hinweis {
+		width: 100%;
+		background-color: #f2f2f7;
+		border: 0;
+		padding: 0.5rem 0.75rem;
+		border-left: 0px;
+		border-right: 0px;
+		margin: 0;
+	}
+	
+	.uebersicht_hinweis i {
+		font-size: 1.825rem;
+		display: block;
+		float: left;
+		margin-right: 0.75rem;
+		margin-top: 0.25rem;
+	}
+}
+
+.uebersicht_punkte {
+	color: #e6c230;
+}
+
+.profil_form > p > * {
+	vertical-align: top;
+}
+
+.profil_form > p > b {
+	display: inline-block;
+	padding-right: 1rem;
+}
+
+.range_button {
+	margin-left: auto !important;
+}
+
+@media screen and (max-width: 600px) {
+	.uebersicht_punkte_container {
+		display: none;
+	}
+
+	form > p > b {
+		display: block;
+		text-align: left;
+	}
+	
+	form > p > input[type="text"], form > p > input[type="number"], form > p > select {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	form > p > input[type="submit"], form > p > input[type="button"], p > .button {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	
+	#start {
+		width: auto;
+		display: inline-block;
+		margin-top: 1;
+	}
+	
+	p > input[type="button"].range_button {
+		width: auto !important;
+		display: inline-block !important;
+	}
+}
+
+/**
+* Basierend auf...
+* @copyright Refsnes Data unter https://www.w3schools.com/howto/howto_js_form_steps.asp
+* @license "Fair Use" von Copyright unterliegenem Material in der Forschung (Nähere Informationen unter: https://www.w3schools.com/about/about_copyright.asp)
+*/
+.willkommen_steps {
+	text-align: left;
+	margin-top: 1rem;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+	.willkommen_steps {
+		text-align: center;
+		margin-top: 2.5;
+		display: block;
+	}
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.125rem;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Mark the active step: */
+.step.active {
+  background-color: #afafaf;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #afafaf;
+}
+/**
+/* w3school.com Ende
+*/
+
+.urkunde_id {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	line-height: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+	.urkunde_id {
+		text-align: center;
+		margin-top: 2.5;
+		display: block;
+	}
+}
+
+/**
+* Hilfe-Modal
+* Basierend auf...
+* @author Jon Henshaw unter https://raventools.com/blog/create-a-modal-dialog-using-css-and-javascript/
+*/
+
+#hilfe_content, #tipp_content {
+     display: none;
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     min-height: 100%;
+	 height: auto;
+     text-align: center;
+     z-index: 1000;
+	 background-color: rgba(0,0,0,0.5);
+}
+
+#hilfe_content div, #tipp_content div {
+     width: 100%;
+	 max-height: 100%;
+     margin: auto;
+     background-color: #f9f9f9;
+     border: none;
+     padding: 1rem;
+     text-align: left;
+	 box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+	#hilfe_content div, #tipp_content div {
+		margin-top: 5rem;
+		margin-bottom: 1rem;
+		width: 35rem;
+		text-align: justify;
+	}
+}
+/**
+/* Hilfe-Modal Ende
+*/
