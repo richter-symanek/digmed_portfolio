@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: #543823 2px solid !important;
+}
+
+input[type="checkbox"]:focus {
+    outline: none !important;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #A38B62;
+}
+
+main {
+    width: 1296px;
+    max-width: 100vw;
+    margin: auto;
+    background-color: #EFEBE6;
+}
+
+b {
+    font-weight: 500;
+}
+
+header {
+    width: 100%;
+    height: 680px;
+    max-height: 100vh;
+    background-image: url("img/sutterlin-1362879.jpg");
+    background-size: 1296px;
+    background-repeat: no-repeat;
+}
+
+menu {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #B9AB88;
+}
+
+menu > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+menu > ul > li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+menu > ul > li > a {
+    color: #543823;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 80px; /* entsprechend der Menühöhe */
+    font-weight: 400;
+    text-decoration: none;
+    height: 80px;
+}
+
+menu > ul > li > #main-page-link {
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+menu > ul > li > a > i {
+    transition: transform .4s ease-in-out 0s,-webkit-transform .4s ease-in-out 0s;
+    display: inline-block !important;
+    transform-origin: center right;
+}
+
+menu > ul > li:hover > a > i {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+header > #search-form {
+    width: 375px;
+    height: auto;
+    background-color: #C1AF8A;
+    padding: 38px;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    position: relative;
+    top: 60px;
+    left: 860px;
+}
+
+header > #search-form > h1 {
+    font-size: 36px;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    line-height: 125%;
+    margin: 0px auto 10px;
+}
+
+header > #search-form > span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+header > #search-form > span > b {
+    font-family: 'Roboto Slab', serif;
+}
+
+header > #search-form input {
+    display: block;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: #EFEBE6;
+    color: #543823;
+    width: 100%;
+    padding: 7.5px 15px;
+    border: none;
+    margin: 15px auto;
+}
+
+header > #search-form input[type="text"] + input[type="text"] {
+    margin-bottom: 7.5px;
+}
+
+header > #search-form a {
+    color: #543823;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+header > #search-form input[type="submit"] {
+    color: #EFEBE6;
+    background-color: #543823;
+    font-size: 16.5px;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 7.5px;
+    cursor: pointer;
+}
+
+main > section {
+    width: 100%;
+    padding: 45px;
+}
+
+main > section h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 27px;
+    color: #543823;
+    font-weight: 400;
+    text-align: left;
+}
+
+main > section h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 21px;
+    color: #543823;
+    font-weight: 400;
+    text-align: left;
+}
+
+main > section h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    color: #543823;
+    font-weight: 400;
+    text-align: left;
+}
+
+main > section p {
+    width: auto;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+main > section p a {
+    font-family: 'Roboto Slab', serif;
+    color: #543823;
+    text-decoration: none;
+}
+
+main > section p b {
+    font-family: 'Roboto Slab', serif;
+}
+
+main > section ul {
+    width: auto;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #B9AB88;
+    color: #543823;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    line-height: 80px; /* entsprechend der Footerhöhe */
+    font-weight: 400;
+}
+
+footer > #copyright, footer > #imprint {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+footer > #copyright {
+    margin-left: 20px !important;
+}
+
+footer > #imprint {
+    text-decoration: none;
+    float: right;
+    color: #543823;
+    margin-right: 20px;
+}
+
+main > #advanced-search-form {
+    background-color: rgba(185, 171, 136, 0.75);
+}
+
+main > #advanced-search-form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+main > #advanced-search-form form > div {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    vertical-align: top;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+main > #advanced-search-form input[type="text"], main > #advanced-search-form input[type="number"], main > #advanced-search-form select {
+    display: block;
+    height: 37.4px;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #543823;
+    background-color: #EFEBE6;
+    width: 100%;
+    padding: 7.5px 15px;
+    border: none;
+    margin: 15px auto;
+}
+
+main > #advanced-search-form .form-date-container {
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    gap: 10px;
+}
+
+main > #advanced-search-form .form-date-label {
+    height: 37.4px;
+    line-height: 37.4px;
+    text-indent: 10px;
+    color: #543823;
+}
+
+main > #advanced-search-form .form-date {
+    display: inline-block !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* Basierend auf CSS: Checkbox styling von Marc Borkowski / https://boolie.org/css-checkbox-styling */
+
+main > #advanced-search-form [type="checkbox"] {
+    position: relative;
+    left: 30px;
+    top: 0px;
+    z-index: 0;
+    -webkit-appearance: none;
+  }
+
+main > #advanced-search-form [type="checkbox"] + label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 15px 15px 20px 55px;
+    position: relative;
+    margin-top: -30px;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+main > #advanced-search-form [type="checkbox"] + label:before {
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid #B9AB88;
+    background-color: #EFEBE6;
+    content: "";
+    margin-right: 15px;
+    transition: background-color 0.5s linear;
+    z-index: 5;
+    position: absolute;
+    left: 0px;
+}
+
+main > #advanced-search-form [type="checkbox"] + label:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    content: "";
+    transition: margin 0.1s linear;
+    box-shadow: 0px 0px 5px #aaa;
+    position: absolute;
+    left: 2px;
+    top: 16px;
+    z-index: 10;
+}
+
+main > #advanced-search-form [type="checkbox"]:checked + label:before {
+    background-color: #543823;
+}
+
+main > #advanced-search-form [type="checkbox"]:checked + label:after {
+    margin: 0 0 0 20px;
+}
+
+/* Checkbox Ende */
+
+main > #advanced-search-form input[type="submit"] {
+    color: #EFEBE6;
+    background-color: #543823;
+    font-size: 16.5px;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    height: 41.4px;
+    padding: 7.5px 15px;
+    border: none;
+    margin: 15px auto 0px;
+}
+
+main > section#results > h2, main > section#entry > h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+main > section#results > h3, main > section#entry > h3 {
+    color: #543823;
+    opacity: 0.6;
+    margin: 10px auto;
+}
+
+main > section#entry > h3 a {
+    color: #543823;
+    text-decoration: none;
+}
+
+main > section#entry h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+    font-weight: 400;
+    text-align: left;
+    margin: 5px auto;
+    text-indent: 5px;
+}
+
+main > section p#entry-count {
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    margin-top: 0px;
+}
+
+main > section table {
+    width: 100%;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0,0,0,0.6);
+}
+
+main > section table tr.entries-row-head  {
+    color: #543823;
+    opacity: 0.6;
+    font-family: 'Roboto Slab', serif;
+}
+
+main > section table tr td.entries-column-head  {
+    color: rgba(0,0,0,0.6);
+    font-family: 'Roboto Slab', serif;
+}
+
+
+main > section table tr td {
+    padding: 15px;
+    
+}
+
+main > section table tr td.entries-year {
+    font-weight: 600;
+    width: 60px;
+    text-align: center;
+}
+
+main > section table tr td.entries-name {
+    width: 220px;
+}
+
+main > section table tr td.entries-digitalised {
+    width: 20px;
+}
+
+main > section table tr td.entries-link {
+    width: 90px;
+    text-align: right;
+    font-family: 'Roboto Slab', serif;
+}
+
+main > section table tr td.entries-living {
+    width: 105px;
+}
+
+
+main > section table tr td a {
+    color: #543823;
+    text-decoration: none;
+}
+
+main > section table tr.entries-row-1 {
+    background-color: #E4DBCE;
+}
+
+main > section table tr.entries-row-2 {
+    background-color: #d4cbb6;
+}
+
+main > section table.single-entry {
+    width: 45%;
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0,0,0,0.6);
+}
+
+main > section table.single-entry tr td, 
+main > section table.single-entry tr + tr + tr td, 
+main > section table.single-entry tr + tr + tr + tr + tr td, 
+main > section table.single-entry tr + tr + tr + tr + tr + tr + tr td  {
+    background-color: #E4DBCE;
+}
+
+main > section table.single-entry tr + tr td, 
+main > section table.single-entry tr + tr + tr + tr td, 
+main > section table.single-entry tr + tr + tr + tr + tr + tr td, 
+main > section table.single-entry tr + tr + tr + tr + tr + tr + tr + tr td {
+    background-color: #d4cbb6;
+}
+
+main > section table.single-entry tr td.entries-column-head{
+    width: 40%;
+}
+
+main > section table tr td a  {
+    color: #543823;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+main > section#entry p {
+    color: rgba(0,0,0,0.6);
+}
